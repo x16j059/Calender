@@ -13,15 +13,16 @@ namespace カレンダー
             DateTime dateNow = DateTime.Now;
             Console.Write("{0}年{1}月\n",dateNow.Year,dateNow.Month);
             //現在の年月の1日を取得する
-            DateTime dateFirst = DateTime.Parse(string.Format("{0}/{1}/1"));
-            dateNow.year, dateNow.Month));
-            DisplayCalendar(dateFirst);//カレンダーの表示
-            Console.ReadLine;
+            DateTime dateFirst = DateTime.Parse(string.Format("{0}/{1}/1",
+            dateNow.Year, dateNow.Month));
+         //   DisplayCalendar(dateFirst);//カレンダーの表示
             Console.ReadLine();           
         }
         //一か月分のカレンダーを画面に表示する
-        //パラメータ
-        //  dateFirst : 表示したい年月の1日を表すDateFirst
+       
+            //パラメータ
+        
+            //  dateFirst : 表示したい年月の1日を表すDateFirst
         static void DisplayCalendar(DateTime DateFirst)
         {
             int week;
